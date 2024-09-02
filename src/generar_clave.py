@@ -1,6 +1,5 @@
 import galois
-from math import ceil, floor, log, exp, gcd
-from scipy.special import comb
+from math import ceil, floor, gcd
 import random
 import numpy as np
 import time

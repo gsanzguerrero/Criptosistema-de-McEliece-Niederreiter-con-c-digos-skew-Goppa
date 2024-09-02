@@ -612,7 +612,7 @@ file_name = "hash_desencapsulado.npy"
 np.save("../archivos/"+file_name, hash_array)
 
 print()
-print("El hash del secreto compartido recibido se ha guardado en el siguiente archivo: ", file_name)
+print("El hash del secreto compartido recibido se ha guardado en el siguiente archivo: ", file_name, "de la carpeta archivos")
 
 final = time.time() #Finalizamos el tiempo de ejecución del programa
 tiempo_transcurrido = final - inicio #Calculamos el tiempo transcurrido durante la ejecución

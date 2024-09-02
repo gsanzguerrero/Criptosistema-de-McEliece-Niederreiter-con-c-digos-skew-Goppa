@@ -85,7 +85,7 @@ criptograma_file_name = "criptograma.npy"
 np.save("../archivos/"+criptograma_file_name, criptograma)
 
 print()
-print("El criptograma se ha guardado en el archivo: ",criptograma_file_name)
+print("El criptograma se ha guardado en el archivo: ",criptograma_file_name, "de la carpeta archivos")
 
 #Creación de un hash del secreto compartido para testear posteriormente el funcionamiento del sistema
 
@@ -113,7 +113,7 @@ file_name = "hash_encapsulado.npy"
 np.save("../archivos/"+file_name, hash_array)
 
 print()
-print("El hash se ha guardado en el archivo: ",file_name)
+print("El hash se ha guardado en el archivo: ",file_name, "de la carpeta archivos")
 
 final = time.time() #Finalizamos el tiempo de ejecución del programa
 tiempo_transcurrido = final - inicio #Calculamos el tiempo transcurrido durante la ejecución

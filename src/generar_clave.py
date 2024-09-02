@@ -600,5 +600,3 @@ final = time.time() #Finalizamos el tiempo de ejecución del programa
 tiempo_transcurrido = final - inicio #Calculamos el tiempo transcurrido durante la ejecución
 print("Clave generada en: ",tiempo_transcurrido," segundos.")
 print()
-
-#PRUEBA

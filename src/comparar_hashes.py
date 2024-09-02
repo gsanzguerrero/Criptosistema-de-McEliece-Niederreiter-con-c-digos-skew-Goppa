@@ -18,11 +18,11 @@ file_encapsulado = sys.argv[1]
 file_dencapsulado = sys.argv[2]
 
 # Cargar el hash generado en el encapsulado desde el archivo
-hash_encapsulado_array = np.load("../archivos/"+file_encapsulado)
+hash_encapsulado_array = np.load("../"+file_encapsulado)
 hash_encapsulado = hash_encapsulado_array[0]
 
 # Cargar el hash generado en el desencapsulado desde el archiv
-hash_encapsulado_array = np.load("../archivos/"+file_dencapsulado)
+hash_encapsulado_array = np.load("../"+file_dencapsulado)
 hash_desencapsulado = hash_encapsulado_array[0]
 
 # Mostrar los hashes cargados

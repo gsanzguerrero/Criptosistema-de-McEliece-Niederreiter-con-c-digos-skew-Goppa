@@ -291,9 +291,9 @@ if len(sys.argv) != 3:
     sys.exit(1)
 
 # Obtener el de los archivos desde los argumentos
-archivo_clave = "../archivos/"+sys.argv[1]
+archivo_clave = "../"+sys.argv[1]
 #Obtener el criptograma del archivo
-archivo_criptograma = "../archivos/"+sys.argv[2]
+archivo_criptograma = "../"+sys.argv[2]
 
 inicio = time.time() #Iniciamos el tiempo de ejecución del programa
 
@@ -609,7 +609,7 @@ print("El secreto compartido ha generado el siguiente hash: ", hash_result)
 hash_array = np.array([hash_result])
 # Guardar el hash en un archivo usando np.save
 file_name = "hash_desencapsulado.npy"
-np.save("../archivos/"+file_name, hash_array)
+np.save("../"+file_name, hash_array)
 
 print()
 print("El hash del secreto compartido recibido se ha guardado en el siguiente archivo: ", file_name)

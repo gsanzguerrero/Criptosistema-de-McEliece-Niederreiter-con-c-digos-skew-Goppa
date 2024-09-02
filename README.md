@@ -1,1 +1,0 @@
-# Criptosistema-de-McEliece-Niederreiter-con-c-digos-skew-Goppa

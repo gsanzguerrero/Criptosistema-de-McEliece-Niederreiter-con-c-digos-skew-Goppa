@@ -16,7 +16,7 @@ if len(sys.argv) != 2: #Si hay error en los argumentos, se indica cómo debe eje
 inicio = time.time() #Iniciamos el tiempo de ejecución del programa
 
 # Obtener el de los archivos desde los argumentos
-archivo_clave = "../"+sys.argv[1]
+archivo_clave = "../archivos/"+sys.argv[1]
 
 print()
 print("Encapsulamiento de un secreto compartido usando la clave previamente generada")
@@ -82,7 +82,7 @@ print("Criptograma generado para el envio: ",criptograma)
 
 # Guardar el criptograma en un archivo llamado "criptograma.npy"
 criptograma_file_name = "criptograma.npy"
-np.save("../"+criptograma_file_name, criptograma)
+np.save("../archivos/"+criptograma_file_name, criptograma)
 
 print()
 print("El criptograma se ha guardado en el archivo: ",criptograma_file_name)
@@ -110,7 +110,7 @@ print("El secreto compartido ha generado el siguiente hash: ", hash_result)
 hash_array = np.array([hash_result])
 # Guardar el hash en un archivo usando np.save
 file_name = "hash_encapsulado.npy"
-np.save("../"+file_name, hash_array)
+np.save("../archivos/"+file_name, hash_array)
 
 print()
 print("El hash se ha guardado en el archivo: ",file_name)

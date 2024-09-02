@@ -585,13 +585,13 @@ print("Tenemos la clave pública, una matriz de dimensiones ",len(H_pub),"x",{le
 
 #El receptor necesita todos los parámetros y elementos de la clave para desencapsular
 clave_privada='Clave.npz'
-np.savez("../"+clave_privada, H_pub=H_pub, n=n, t=t, p=p, d=d, k=k, m=m, delta=delta, h=h, mu=mu, r=r, polinomio_def_L=polinomio_def_L.coefficients(), polinomio_def_F=polinomio_def_F.coefficients(), polinomios_nc_paridad=polinomios_nc_paridad, elementos_aleatorios_eta=elementos_aleatorios_eta, puntos_evaluacion=puntos_evaluacion, g=g.coefficients(), matriz_B2=matriz_B2)
+np.savez("../archivos/"+clave_privada, H_pub=H_pub, n=n, t=t, p=p, d=d, k=k, m=m, delta=delta, h=h, mu=mu, r=r, polinomio_def_L=polinomio_def_L.coefficients(), polinomio_def_F=polinomio_def_F.coefficients(), polinomios_nc_paridad=polinomios_nc_paridad, elementos_aleatorios_eta=elementos_aleatorios_eta, puntos_evaluacion=puntos_evaluacion, g=g.coefficients(), matriz_B2=matriz_B2)
 print()
 print("La clave privada y los parámetros del criptosistema se han guardado en el archivo ",clave_privada)
 
 #El transmisor necesita algunos parámetros y elementos de la clave para encapsular
 clave_publica='Clave_pub.npz'
-np.savez("../"+clave_publica, H_pub=H_pub, n=n, t=t, p=p, d=d, k=k, polinomio_def_F=polinomio_def_F.coefficients())
+np.savez("../archivos/"+clave_publica, H_pub=H_pub, n=n, t=t, p=p, d=d, k=k, polinomio_def_F=polinomio_def_F.coefficients())
 print()
 print("La clave pública y los parámetros del criptosistema se han guardado en el archivo ",clave_publica)
 

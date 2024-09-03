@@ -315,6 +315,7 @@ delta = int(data['delta'])
 h = int(data['h'])
 mu = int(data['mu'])
 
+
 #Construcción del cuerpo L
 
 #Obtenemos el polinomio irreducible de L del archivo

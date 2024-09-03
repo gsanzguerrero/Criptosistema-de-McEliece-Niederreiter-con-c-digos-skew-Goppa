@@ -463,7 +463,7 @@ primitivo_K = primitivo_L**exponente_K
 #Fabricamos polinomio de K en L -> el grado es s=2t/mu (si no es entero, pillamos la parte entera)
 #Queremos polinomio de ese grado -> pillamos una lista de 2t/mu+1 elementos (un 1 y 2t/mu elementos de K)
 #¿Cómo cogemos eltos de K de forma aleatoria y homogenea? Repetimos S veces
-#Cogemos nº aleatorio entre 0 y p**(delta) -1 (range(p**delta)). Si este nº es p**(delta)-1 añadimos el 0 a la lista.
+#Cogemos nº aleatorio entre 0 y p**(delta) -1 randint(0,(p**delta)-1 ). Si este nº es p**(delta)-1 añadimos el 0 a la lista.
 #Si no, elevamos primK a ese numero aleatorio y añadimos. Tenemos coeficientes de polonimio de grado s
 
 #Este comentario de arriba no se si quitarlo

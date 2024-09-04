@@ -376,7 +376,7 @@ print()
 
 print("Comienzo del desencapsulado del criptograma")
 
-print("Cálculo del vector y: ")
+print("Cálculo del vector y...")
 
 #Cálculo del vector y
 y=[F(0)] * n #Creamos un vector y con n posiciones nulas
@@ -526,6 +526,7 @@ while len(A) != t:
         # Termina la ejecución del programa
         sys.exit(1)
 
+print("Posiciones de error calculadas con éxito")
 
 #Calculamos elementos necesarios para constuir el sistema de ecuaciones
 rho = [L(0)] * t #Calculamos una lista de t elementos nulos

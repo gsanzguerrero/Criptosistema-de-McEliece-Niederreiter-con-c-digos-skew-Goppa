@@ -168,3 +168,51 @@ Para verificar que las librerías se han instalado correctamente, abre una conso
 import numpy as np
 import galois
 from progress.bar import Bar
+
+
+Uso del Proyecto
+Preparación del Entorno
+Clonación del Repositorio: Clona el repositorio en tu máquina local utilizando el siguiente comando:
+
+bash
+Copiar código
+git clone https://github.com/gsanzguerrero/Criptosistema-de-McEliece-Niederreiter-con-c-digos-skew-Goppa.git
+Crear la Carpeta para Archivos Generados: Navega a la carpeta del proyecto y crea una subcarpeta llamada archivos para almacenar los archivos generados por el sistema:
+
+bash
+Copiar código
+cd Criptosistema-de-McEliece-Niederreiter-con-c-digos-skew-Goppa
+mkdir archivos
+Ejecutar el Proyecto
+A continuación, se detallan los comandos para ejecutar cada parte del sistema:
+
+Generación de Claves: Ejecuta el siguiente script para generar las claves públicas y privadas necesarias para el criptosistema:
+
+bash
+Copiar código
+cd src
+python generar_clave.py
+Este script generará los archivos de clave pública y privada en la carpeta archivos.
+
+Encapsulado de un Secreto Compartido: Utiliza el script encapsular.py para construir y encapsular un secreto compartido aleatorio en un criptograma. Asegúrate de que el archivo de clave pública esté en la carpeta archivos antes de ejecutar el script:
+
+bash
+Copiar código
+python encapsular.py archivos/Clave_pub.npz
+El criptograma resultante se guardará en la carpeta archivos.
+
+Desencapsulado del Criptograma: Para desencapsular el criptograma y obtener el secreto compartido, utiliza el script desencapsular.py. Asegúrate de tener el criptograma y la clave privada en la carpeta archivos:
+
+bash
+Copiar código
+python desencapsular.py archivos/Clave.npz archivos/criptograma.npy
+El secreto compartido será generado y guardado en la carpeta archivos.
+
+Comprobación del Funcionamiento: Verifica que el criptosistema funcione correctamente comparando los hashes generados al encapsular y desencapsular. Asegúrate de que los archivos de hash estén en la carpeta archivos:
+
+bash
+Copiar código
+python comparar_hashes.py archivos/hash_encapsulado.npy archivos/hash_desencapsulado.npy
+Cada uno de estos comandos debe ejecutarse en la terminal dentro de la carpeta src del proyecto. Asegúrate de tener todos los archivos necesarios en la carpeta archivos antes de ejecutar los scripts correspondientes.
+
+Para más detalles sobre el uso de cada script, consulta el Manual de Usuario.

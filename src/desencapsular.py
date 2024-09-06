@@ -250,39 +250,6 @@ def coord(elto_L, matriz_B2_inversa, m, F):
     return eltos_F
 
 
-def es_normal(elemento, p, delta, mu, cuerpo):
-    """
-    Verifica si un elemento es normal, es decir, si genera una base normal de la extensión K sobre L.
-
-    Parámetros:
-    elemento (galois.Poly): El elemento a verificar.
-    p (int): La característica del cuerpo.
-    delta (int): Un parámetro relacionado con la extensión.
-    mu (int): El grado de la extensión.
-    cuerpo (galois.Field): El cuerpo sobre el cual se realiza la verificación.
-
-    Retorna:
-    bool: True si el elemento genera una base normal, False en caso contrario.
-    """
-    # Crear el primer polinomio 1 - x^mu
-    terminos_pol_1 = [1]
-    for i in range(mu - 1):
-        terminos_pol_1.append(0)
-    terminos_pol_1.append(-1)
-
-    polinomio_1 = galois.Poly(terminos_pol_1, field=cuerpo)
-
-    # Crear el segundo polinomio con los términos elemento^(p^(i*delta))
-    terms_2 = [elemento ** (p ** (i * delta)) for i in range(mu)]
-    polinomio2 = galois.Poly(terms_2, field=cuerpo)
-
-    # Calcular el máximo común divisor (MCD) de los dos polinomios
-    gcd = galois.gcd(polinomio_1, polinomio2)
-
-    # Verificar si el MCD es 1
-    return gcd == galois.Poly.One(cuerpo)
-
-
 
 # Verificar que se pasen dos argumentos (los nombres de los archivos)
 if len(sys.argv) != 3:

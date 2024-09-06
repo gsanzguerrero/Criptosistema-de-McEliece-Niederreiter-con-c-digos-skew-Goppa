@@ -96,7 +96,7 @@ def division_nc(f, g, h, field):
 def PCP(f, g, h, field):
     """
     Calcula el máximo común divisor a la derecha de dos polinomios f y g utilizando el algoritmo de Euclides extendido 
-    no conmutativo para quedarnos con el cpeficiente de Bezout correspondiente al primer polinomio.
+    no conmutativo para quedarnos con el coeficiente de Bezout correspondiente al primer polinomio.
 
     Parámetros:
     f (galois.Poly): El primer polinomio.
@@ -424,8 +424,8 @@ while len(elementos_aleatorios_eta)<n:
         elementos_aleatorios_eta.append(elemento_eta) #Si es no nulo, lo añadimos
         barra_eta.next() #Actualizamos la barra de progreso
 
-print("Vector normalizador calculado")
-print("Tamaño del vector normalizador: ", len(elementos_aleatorios_eta))
+print()
+print("Vector normalizador calculado. Tamaño del vector normalizador: ", len(elementos_aleatorios_eta))
 
 #Cálculo de los puntos de evaluación
 print()
@@ -444,8 +444,8 @@ while(len(puntos_evaluacion)<n):
         puntos_evaluacion.append(punto_evaluacion) #Si el elemento no se encuentra ya en la lista, lo añadimos
         barra_puntos_evaluacion.next() #Actualizamos la barra de progreso
 
-print("Puntos de evaluación calculados")
-print("Tamaño del vector de puntos de evaluación: ", len(puntos_evaluacion))
+print()
+print("Puntos de evaluación calculados. Tamaño del vector de puntos de evaluación: ", len(puntos_evaluacion))
 
 #Construcción del polinomio g (normal o bilatero)
 #G es un polinomio bilatero. estos se construyen como el producto de un polinomio central por una potencia de x. 

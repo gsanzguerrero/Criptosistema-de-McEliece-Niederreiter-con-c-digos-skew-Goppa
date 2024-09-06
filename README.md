@@ -184,7 +184,6 @@ from progress.bar import Bar
 Clona el repositorio en tu máquina local utilizando el siguiente comando:
 
 ```bash
-Copiar código
 git clone https://github.com/gsanzguerrero/Criptosistema-de-McEliece-Niederreiter-con-c-digos-skew-Goppa.git
 ```
 
@@ -193,7 +192,6 @@ git clone https://github.com/gsanzguerrero/Criptosistema-de-McEliece-Niederreite
 Navega a la carpeta del proyecto y crea una subcarpeta llamada archivos para almacenar los archivos generados por el sistema:
 
 ```bash
-Copiar código
 cd Criptosistema-de-McEliece-Niederreiter-con-c-digos-skew-Goppa
 mkdir archivos
 ```
@@ -218,7 +216,6 @@ Este script generará los archivos de clave pública y privada en la carpeta arc
 Utiliza el script encapsular.py para construir y encapsular un secreto compartido aleatorio en un criptograma. Asegúrate de que el archivo de clave pública esté en la carpeta archivos antes de ejecutar el script:
 
 ```bash
-Copiar código
 python encapsular.py archivos/Clave_pub.npz
 ```
 
@@ -229,7 +226,6 @@ El criptograma resultante se guardará en la carpeta archivos.
 Para desencapsular el criptograma y obtener el secreto compartido, utiliza el script desencapsular.py. Asegúrate de tener el criptograma y la clave privada en la carpeta archivos:
 
 ```bash
-Copiar código
 python desencapsular.py archivos/Clave.npz archivos/criptograma.npy
 ```
 
@@ -240,7 +236,6 @@ El secreto compartido será generado y guardado en la carpeta archivos.
 Verifica que el criptosistema funcione correctamente comparando los hashes generados al encapsular y desencapsular. Asegúrate de que los archivos de hash estén en la carpeta archivos:
 
 ```bash
-Copiar código
 python comparar_hashes.py archivos/hash_encapsulado.npy archivos/hash_desencapsulado.npy
 ```
 

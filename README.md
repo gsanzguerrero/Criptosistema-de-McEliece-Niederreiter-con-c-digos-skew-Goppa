@@ -168,7 +168,7 @@ Para verificar que las librerías se han instalado correctamente, abre una conso
 import numpy as np
 import galois
 from progress.bar import Bar
-
+```
 
 Uso del Proyecto
 Preparación del Entorno

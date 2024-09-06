@@ -1,6 +1,11 @@
 
 # Criptosistema de McEliece/Niederreiter con Códigos Skew Goppa
 
+> Trabajo de Fin de Grado. Grado en Ingeniería Informática. Universidad de Granada
+
+> Realizado por Gonzalo Sanz Guerrero y tutorizado por Francisco Javier Lobillo Borrero durante el curso académico 2023/2024.
+
+
 ## Descripción del Proyecto
 
 Este proyecto implementa un criptosistema de McEliece/Niederreiter utilizando códigos skew Goppa en Python. El sistema incluye la generación de claves, el encapsulado y desencapsulado de secretos compartidos, y la verificación del funcionamiento a través de hashes. 
@@ -208,7 +213,7 @@ python generar_clave.py
 
 Este script generará los archivos de clave pública y privada en la carpeta archivos.
 
-### Encapsulado de un Secreto Compartido: 
+#### Encapsulado de un Secreto Compartido: 
 
 Utiliza el script encapsular.py para construir y encapsular un secreto compartido aleatorio en un criptograma. Asegúrate de que el archivo de clave pública esté en la carpeta archivos antes de ejecutar el script:
 
